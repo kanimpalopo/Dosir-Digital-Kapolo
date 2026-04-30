@@ -35,7 +35,7 @@
 
   /* ── Header ── */
 /* ── Header ── */
-  .site-header {
+.site-header {
     background: var(--accent);
     color: #fff;
     padding: 20px 32px;
@@ -45,21 +45,21 @@
     box-shadow: 0 2px 8px rgba(26,86,164,.25);
   }
   .site-header .logo {
-    width: 55px;  /* Lebar maksimal logo */
-    height: 55px; /* Tinggi maksimal logo */
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
+    width: 45px;  /* Sedikit diperbesar dari 44px agar logo lebih jelas */
+    height: 45px;
+    background: rgba(255,255,255,.15); /* Mengembalikan kotak transparan */
+    border-radius: 10px; /* Mengembalikan sudut melengkung */
+    display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
+    padding: 6px; /* Memberi jarak dalam agar logo tidak menempel ke tepi kotak */
   }
-  /* KODE KUNCI: Memaksa gambar tunduk pada ukuran kotak .logo */
   .site-header .logo img {
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
   }
-  .site-header h1 { font-size: 16px; font-weight: 700; line-height: 1.2; }
-  .site-header p  { font-size: 12px; opacity: .75; margin-top: 2px; }
+  .site-header h1 { font-size: 16px; font-weight: 700; line-height: 1.2; margin: 0; }
+  .site-header p  { font-size: 12px; opacity: .75; margin: 2px 0 0 0; }
 
   /* ── Main Container ── */
   .container { max-width: 1280px; margin: 0 auto; padding: 28px 24px; }
