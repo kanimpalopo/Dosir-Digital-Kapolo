@@ -35,26 +35,25 @@
 
   /* ── Header ── */
 /* ── Header ── */
-/* ── Header ── */
   .site-header {
     background: var(--accent);
     color: #fff;
-    padding: 18px 32px; /* Padding atas-bawah disesuaikan */
+    padding: 18px 32px;
     display: flex;
-    align-items: center; /* Memastikan logo dan teks sejajar di tengah */
-    gap: 18px; /* Jarak antara logo dan teks */
+    align-items: center;
+    gap: 12px; /* <-- DIKECILKAN: Merapatkan jarak antara logo dan teks */
     box-shadow: 0 2px 8px rgba(26,86,164,.25);
   }
   .site-header .logo {
-    width: 56px;  /* Kotak diperbesar sedikit */
+    width: 56px;
     height: 56px;
     background: rgba(255,255,255,.15);
-    border-radius: 12px; /* Sudut melengkung disesuaikan */
+    border-radius: 12px;
     display: flex; 
     align-items: center; 
     justify-content: center;
     flex-shrink: 0;
-    padding: 5px; /* Padding dikecilkan agar logo imigrasi tampil lebih besar & penuh */
+    padding: 5px;
   }
   .site-header .logo img {
     width: 100%;
@@ -62,17 +61,16 @@
     object-fit: contain;
   }
   .site-header h1 { 
-    font-size: 20px; /* Huruf judul diperbesar agar lebih proporsional dengan logo */
+    font-size: 20px; 
     font-weight: 700; 
-    line-height: 1.1; /* Merapatkan tinggi baris */
-    margin: 0; /* Menghilangkan jarak bawaan browser */
+    line-height: 1; /* <-- DIRAPATKAN: Membuang jarak kosong bawaan dari tinggi huruf */
+    margin: 0; 
   }
   .site-header p { 
     font-size: 13.5px; 
-    opacity: 0.85; /* Warna teks bawah sedikit lebih terang */
-    margin: 4px 0 0 0; /* Memberi jarak pas 4px dari judul di atasnya */
+    opacity: 0.85; 
+    margin: 2px 0 0 0; /* <-- DIKECILKAN: Jarak dari judul ke sub-judul sekarang hanya 2px */
   }
-
   /* ── Main Container ── */
   .container { max-width: 1280px; margin: 0 auto; padding: 28px 24px; }
 
