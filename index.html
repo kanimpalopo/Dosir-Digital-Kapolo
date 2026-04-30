@@ -34,6 +34,7 @@
   }
 
   /* ── Header ── */
+/* ── Header ── */
   .site-header {
     background: var(--accent);
     color: #fff;
@@ -44,16 +45,19 @@
     box-shadow: 0 2px 8px rgba(26,86,164,.25);
   }
   .site-header .logo {
-    width: 50px; height: 50px;
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px; flex-shrink: 0;
+    width: 55px;  /* Lebar maksimal logo */
+    height: 55px; /* Tinggi maksimal logo */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-shrink: 0;
   }
- .site-header .logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+  /* KODE KUNCI: Memaksa gambar tunduk pada ukuran kotak .logo */
+  .site-header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+  }
   .site-header h1 { font-size: 16px; font-weight: 700; line-height: 1.2; }
   .site-header p  { font-size: 12px; opacity: .75; margin-top: 2px; }
 
