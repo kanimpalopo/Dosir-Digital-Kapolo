@@ -190,7 +190,12 @@ if (!isset($_SESSION['login'])) {
     <h1>DOSIR DIGITAL PEGAWAI</h1>
     <p>Kantor Imigrasi Kelas II Non TPI Palopo</p>
   </div>
+<div style="margin-left: auto; text-align: right;">
+    <span style="font-size: 12px; opacity: 0.8; margin-right: 15px;">Halo, <?php echo $_SESSION['nama']; ?></span>
+    <a href="logout.php" style="color: white; text-decoration: none; font-size: 13px; font-weight: 600; padding: 6px 12px; background: rgba(255,255,255,0.2); border-radius: 6px;">Keluar</a>
+</div>
 </header>
+    
 
 <div class="container">
   <div class="toolbar">
